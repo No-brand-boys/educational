@@ -1,0 +1,20 @@
+spring:
+  devtools:
+    restart:
+      additional-paths: src/main/java
+      enabled: true
+      exclude: test/**
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /
+
+server:
+  port: 8787
+
+mybatis:
+  mapper-locations: classpath:com/example/educational/*.xml
